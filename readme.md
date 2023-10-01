@@ -44,22 +44,22 @@ This is the draft concept design for a speech-to-text summarizer application. Th
 # Views and Navigation
 # Jobs View
 - The jobs page displays the `Call Summary` which contains the text of the summarized call using a trained sentence extractor ML Model. The `Drive Mode` button links to the page containing an audio player that plays the summarized audio by using Google API's text-speech on the summarized text. The `Client Recommendation` contains the recommended solutions for the client using a multivariate linear regression ML model to predict issues given previous client data. 
-### ![alt text](./res/jobs_page.png)
+### ![alt text](jobs_page.png)
 
 # Client View
 - The client page displays information about the given client that plays the summarized audio by using Google API's text-to-speech on the summarized text.
-### ![alt text](./res/client_page.png)
+### ![alt text](client_page.png)
 
 ## Drive Mode View
 - The drive mode page displays an audio player that plays the summarized text-to-speech audio. 
-### ![alt text](./res/drive_mode_page.png)
+### ![alt text](drive_mode_page.png)
 
 # Upload View
 - The upload page displays a `Your name` and `Select Files` option. The `Select Files` accepts a `.wav` file that will be transcribed, summarized, and analyzed for prediction data.
-### ![alt text](./res/upload_page.png)
+### ![alt text](upload_page.png)
 
 # Flow Chart
-### ![alt text](./res/FlowChart.png)
+### ![alt text](flow_chart.png)
 
 ## Notes
 - `training` contains training data in the form of a CSV that is used to train the MLR Model
