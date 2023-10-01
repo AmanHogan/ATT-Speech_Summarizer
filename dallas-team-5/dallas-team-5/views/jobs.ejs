@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Jobs </title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/jobs.js" ></script>
+</head>
+
+
+<body style="margin: 0px; background: #EEF2F5;">
+
+    <!-- Navigation Header -->
+    <div class="nav-bar"> 
+        <img src="/img/icon-left.png" alt="Left arrow" class="icon-left"></img>
+        <div class="job-id-title"> BAN 123456789 </div>
+        <img src="/img/att-logo.png" alt="att logo" height="73" width="94" class="att-logo-nav"></img>
+        <img src="/img/icon-notes.png" alt="Right arrow"  class="icon-right"></img>
+    </div>
+
+    <!-- Navigation Banner -->
+    <div class="nav-banner">
+        <div class="banner-appt-time">APPT: 10:00 - 12:00 pm </div>
+        <div class="banner-appt-container">
+            <div class="banner-appt-type">Install</div>
+            <img src="/img/icon-dispatch.png" class="icon-dispatch" alt="icon-dispatch"></img>
+        </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="nav-divider"></div>
+    <div class="nav-tabs">
+        <div class="nav-tab-item-container"><div class="nav-tab-item">Job</div></div>
+        <div class="nav-tab-item-container"><div class="nav-tab-item" id="clientTab"  onclick="goToClientPage()">Client</div></div>
+        <div class="nav-tab-item-container"><div class="nav-tab-item">History</div></div>
+        <div class="nav-tab-item-container"><div class="nav-tab-item">Facilities</div></div>
+        <div class="nav-tab-item-container"><div class="nav-tab-item">Tests</div></div>
+    </div>
+
+    <div class="job-install-container">
+        <div class="job-text-details">JOB SUMMARY</div>
+        <div class="job-text-install"> Business Install</div>
+    </div>
+
+    <div class="job-details-container">
+
+        <!-- Job Summary / Business Install Cards -->
+        <div class="job-card-small">
+            <img src="/img/icon-transcript.png" alt="transcript"></img>
+            <div class="job-card-small-text">Full Call Transcription</div>
+            <div class="job-card-small-text-blue"> MORE </div>
+        </div>
+
+        <div class="job-card-small">
+            <img src="/img/icon-audio.png" alt="audio"></img>
+            <div class="job-card-small-text">Listen to Full Call Audio</div>
+            <div class="job-card-small-text-blue">&nbsp &nbsp &nbsp &nbsp </div>
+        </div>
+
+        <div class="job-card-big">
+            <div class="job-card-small-text padding-bottom-small">Call Summary</div>
+            <div class="job-text-details padding-bottom-small" id="summarized-text"> <%= summarizedText %> </div>
+            <div class="nav-divider"></div>
+            <div class="job-card-small-text-blue padding-top-small" style="margin:auto"> READ MORE</div>
+        </div>
+
+        <div id="driveModeCard" class="job-card-small" onclick="goToDriveMode()">
+            <img src="/img/icon-car.png" alt="car" width="50px" height="50px"></img>
+            <div class="job-card-small-text" style="padding-top: 10px;"> Drive Mode</div>
+            <div class="job-card-small-text-blue">&nbsp &nbsp &nbsp &nbsp </div>
+        </div>
+
+        <div class="job-card-big">
+            <div class="job-card-small-text padding-bottom-small">Client Recommendation</div>
+            <div class="job-text-details padding-bottom-small" style="font-weight: bold;" id="summarized-text"> <%= clientRecommendationText%> </div>
+            <div class="nav-divider"></div>
+            <div class="job-card-small-text-blue padding-top-small" style="margin:auto"> READ MORE</div>
+        </div>
+
+        <!-- CUSTOMER VOIP Cards -->
+        <div class="job-services-container">
+            <div class="job-card-small-text " style="font-size: 25px; padding: 4vh 0px 4vh 0px">Consumer VOIP</div>
+            <div class="job-card-small-text " style="font-size: 25px; padding: 4vh 0px 4vh 0px; margin-left: auto; color: #096FEC;">TICKET INFO</div>
+        </div>
+
+        <div class="job-card-big" style="grid-template-rows: auto auto auto auto auto;">
+            <div class="job-card-small-text padding-bottom-small">Agent Comments</div>
+            <div class="job-text-details padding-bottom-small" id="summarized-text"> Atlas Testing - Do not close - Repeat will result</div>
+            <div class="job-card-small-text padding-bottom-small">Emergency Notes</div>
+            <div class="nav-divider"></div>
+            <div class="job-card-small-text-blue padding-top-small" style="margin:auto"> READ MORE</div>
+        </div>
+
+        <div class="job-card-big">
+            <div class="job-card-small-text padding-bottom-small">Consumer VOIP</div>
+            <div class="job-text-details padding-bottom-small" id="summarized-text"> No of lines: 2</div>
+            <div class="nav-divider"></div>
+        </div>
+
+        <div class="job-card-big">
+            <div class="job-card-small-text padding-bottom-small">U-verse TV</div>
+            <div class="job-text-details " id="summarized-text"> IV Profile: 0450 </div>
+            <div class="job-text-details " id="summarized-text"> Premium Packages: 13</div>
+        </div>
+    </div>
+</body>
+
+</html>

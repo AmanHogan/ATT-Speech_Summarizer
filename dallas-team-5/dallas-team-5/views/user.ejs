@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" style="background: #EEF2F5;">
+<head>
+    <title> User Home Page </title>
+    <link rel="stylesheet" href="/css/styles.css">
+    
+</head>
+
+<body style="margin: 0px; background: #EEF2F5;">
+    
+    <!-- Navigation Header -->
+    <div class="nav-user-container"> <img src="/img/att-logo.png" alt="att logo" height="73" width="94" ></img> </div>
+
+    <!-- Navigation Banner -->
+    <div class="nav-user-banner">
+        <div class="banner-appt-container">
+            <div class="banner-appt-type">User File Upload</div>
+        </div>
+    </div>
+
+    <!-- File Upload Section -->
+    <div class="container">
+        <h1>File Upload</h1>
+        <form id='form'>
+            <div class="input-group">
+                <label for='name'>Your name</label>
+                <input name='name' id='name' placeholder="Enter your name" />
+            </div>
+            <div class="input-group">
+                <label for='files'>Select files</label>
+                <input id='files' type="file" multiple>
+            </div>
+            <button class="submit-btn" type='submit'>Upload</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="user-footer"> <div> <a class="footer-link-text" target="_blank" href="http://localhost:3000/jobs"> Jobs Page </a></div></div>
+    <script src="/js/user.js" ></script>
+
+    <!-- Toast Message -->
+    <div id = "toast-message-success" > File(s) succesfully uploaded</div>
+    <div id = "toast-message-fail" > Please Upload a File</div>
+
+</body>
+</html>

@@ -1,0 +1,645 @@
+/* ========================= START FONTS ============================ */
+@font-face {
+    font-family: 'AlekSans';
+    src: url('../fonts/ATTAleckSlab_W_Bd.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AlekSlab';
+    src: url('../fonts/ATTAleckSlab_W_Rg.ttf') format('truetype');
+}
+
+/* ========================= END FONTS ============================ */
+
+/* ========================= START UPLOAD PAGE ============================ */
+body {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    background-size: cover;
+}
+
+.padding-bottom-small
+{
+    padding-bottom: 1vh;
+}
+
+.padding-top-small
+{
+    padding-top: 1vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+.container {
+    background-color: rgb(255, 255, 255);
+    margin: 60px auto;
+    box-shadow: 4px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+}
+
+.container h1 {
+    font-family: 'AlekSans', fallback-font, sans-serif;
+    text-align: center;
+    
+    color: rgb(0, 0, 0);
+}
+
+h1{
+    padding-top: 40px;
+}
+
+
+form {
+    background-color: white;
+    padding: 30px;
+    font-family: 'AlekSans', fallback-font, sans-serif;
+    width: 400px;
+    margin: auto;
+}
+
+
+form .input-group {
+    margin-bottom: 15px;
+}
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+form input {
+    padding: 12px 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.submit-btn {
+    width: 100%;
+    border: none;
+    background: #552F63;
+    font-size: 18px;
+    color: white;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 4px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    font: bold;
+    cursor: pointer;
+    transition: opacity .15s;
+
+}
+.submit-btn:hover {
+    opacity:.8;
+}
+
+/* ========================= END UPLOAD PAGE ============================ */
+
+/* ========================= START GENERAL STYLES ============================ */
+.navHeader{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+background: rgb(0, 0, 0);
+margin: -1em -1em 0px -1em;
+height: 100px;
+
+}
+.navItem{
+    background: rgb(0, 0, 0);
+
+}
+
+.attLogo{
+    margin: 20px 0px 0px 40px;
+}
+
+/* ========================= END GENERAL STYLES ============================ */
+
+/* ========================= START ADMIN PAGE ============================ */
+
+.admin-body-container
+{
+    margin: 16px 15% 0px 15%;
+    background-color: #fff;
+    box-shadow: 4px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    padding: 16px;
+    height: 400px;
+}
+
+.bullet-list-link{
+    font-size: 25px;
+    font-family: 'AlekSans', fallback-font, sans-serif;
+    color: black;
+    transition: font-size .15s;
+}
+
+.bullet-list-link:hover{
+font-size: 40px;
+}
+
+.bullet-list-point{
+    margin-bottom: 10px;
+}
+
+
+.user-footer{
+    padding: 40px;
+    height: 250px;
+    text-align: center;
+    background: #3F234A;
+    color: #ffffff;
+    margin-bottom: 0px;
+    
+}
+
+.footer-link-text{
+    font-size: 25px;
+    font-family: 'AlekSans', fallback-font, sans-serif;
+    color: rgb(255, 255, 255);
+    transition: font-size .15s;
+    
+}
+
+.footer-link-text:hover{
+    font-size: 35px;
+    color: #0057b8;
+}
+
+.admin-footer{
+    height: 250px;
+    text-align: center;
+    background-color: rgba(0, 0, 0);
+    color: #ffffff;
+    margin-bottom: 0px;
+
+  }
+
+/* ========================= END ADMIN PAGE ============================ */
+
+/* ========================= START UPLOADS PAGE ============================ */
+#toast-message-success{
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #0057b8;; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+    font-size: 14px;
+    font-family: 'AlekSans', fallback-font, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#toast-message-success.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+#toast-message-fail{
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #d40000; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+    font-size: 14px;
+    font-family: 'AlekSans', fallback-font, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#toast-message-fail.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+  
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+  
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+  
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+/* ========================= END UPLOADS PAGE ============================ */
+
+/* ========================== START JOBS / CLIENTS PAGE ========================= */
+
+.nav-bar{
+margin: 0px;
+background: #3F234A;
+display: grid;
+grid-template-columns: 100px 150px auto 100px;
+align-items: center;
+padding: 0px 0px 15px 0px;
+
+}
+
+.att-logo-nav{
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+}
+
+.icon-left{
+    justify-self: center;
+    transition: width .15s;
+    transition: height .15s;
+}
+
+.icon-left:hover{
+    width: 30px;
+    height: 44px;
+}
+
+
+.icon-right{
+    justify-self: center;
+    transition: width .15;
+    transition: height .15s;
+}
+
+
+.icon-right:hover{
+    width: 50px;
+    height: 50px;
+
+}
+
+.job-id-title{
+    color: white;
+}
+
+
+.nav-banner{
+background: #552F63;
+display: grid;
+grid-template-rows: 3vh 10vh;
+padding-left: 5vh;
+padding-top: 5vh;
+padding-right: 5vh;
+}
+
+.banner-appt-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.banner-appt-time{
+    font-size: 16px;
+    font-family: 'AlekSlab', fallback-font, sans-serif;
+    color: white;
+}
+
+.banner-appt-type{
+    font-family: 'AlekSans', fallback-font, sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+.icon-dispatch{
+    margin-left: auto;
+    transition: width height .8s;
+}
+.icon-dispatch:hover{
+    height: 90x;
+    width: 286px;
+}
+
+
+.body-header-text-2{
+    font-family: 'AlekSans', fallback-font, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+/* Navigation Tabs*/
+
+.nav-tabs{
+    background: #552F63;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 3vh 5vh 3vh 5vh;
+}
+
+.nav-divider{
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 1px;
+    background: #B6A5BC;;
+
+}
+.nav-tab-item-container{
+    font-size: 20px;
+    font-family: 'AlekSlab', fallback-font, sans-serif;
+    color: white;
+    height: 50px;
+    background: #552F63;
+    transition: background .15s;
+    width: 10vh;
+    
+}
+.nav-tab-item-container:hover {
+
+    background: white;
+}
+
+
+.nav-tab-item{
+    font-size: 20px;
+    font-family: 'AlekSans', fallback-font, sans-serif;
+    color: #B6A5BC;
+    height: 40px;
+    background: #552F63; 
+    transition: color .15s;
+}
+
+.nav-tab-item:hover{
+    color: white;
+}
+
+.job-install-container{
+    display: grid;
+    background: #EEF2F5;;
+    grid-template-rows: auto auto;
+    padding-left: 5vh;
+    padding-top: 5vh;
+
+}
+
+.job-text-details{
+    font-size: 20px;
+    font-family: 'AleckSlab', fallback-font, sans-serif;
+    margin-bottom: 1vh;
+}
+
+.job-text-install{
+    font-size: 30px;
+    font-family: 'AlekSans', fallback-font, sans-serif;
+    font-weight: bold;
+}
+
+
+.job-details-container{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-top: 2vh;
+}
+
+.job-card-small{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    border-radius: 15px;
+    background: white;
+    margin-bottom: 2vh;
+    padding: 3vh;
+    border-style: solid;
+    border-color: white;
+    transition: border-color .8s;
+}
+
+.job-card-small:hover{
+    border-color: #096FEC;
+}
+
+.job-card-small-text{
+    font-size: 25px;
+    font-family: 'AlekSans', fallback-font, sans-serif;
+    font-weight: bold;
+}
+
+.job-card-small-text-blue{
+    font-size: 25px;
+    font-family: 'AlekSans', fallback-font, sans-serif;
+    font-weight: bold;
+    color: #096FEC;
+    margin-left: auto;
+}
+
+
+.job-card-big{
+    display:grid;
+    grid-template-rows: auto auto auto auto;
+    border-radius: 15px;
+    background: white;
+    margin-bottom: 2vh;
+    padding: 3vh;
+    border-style: solid;
+    border-color: white;
+    transition: border-color .8s;
+}
+
+
+.job-card-big:hover{
+    border-color: #096FEC;
+}
+
+.job-services-container{
+    display:grid;
+    grid-template-columns: auto auto;
+}
+
+.drive-mode-container{
+    margin: 5vh;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav-bar-drive-mode{
+    margin: 0px;
+    background: #3F234A;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 15px 0px;
+    
+}
+
+.nav-banner-drive-mode{
+    background: #552F63;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-left: 5vh;
+    padding-top: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 4vh;
+}
+
+.banner-drive-mode-text{
+    font-size: 20px;
+    font-family: 'AleckSlab', fallback-font, sans-serif;
+    color: white;
+    margin: auto;
+    
+}
+
+ .nav-user-container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: #3F234A;
+    padding: 3vh 0vh 3vh 0vh;
+ }
+
+ .nav-user-banner{
+    background: #552F63;
+    display: grid;
+    grid-template-rows: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+ .client-info-container{
+    display: grid;
+    background: #EEF2F5;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    padding-left: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+}
+
+.client-text-info{
+    font-size: 40px;
+    font-family: 'AlekSans', fallback-font, sans-serif;
+    font-weight: bold;
+}
+
+
+.client-info-card{
+    display:grid;
+    grid-template-rows: auto  ;
+    border-radius: 15px;
+    background: white;
+    margin-bottom: 3vh;
+    margin-left: 5vh;
+    border-style: solid;
+    border-color: white;
+    transition: border-color .8s;
+    padding-right: 5vh;
+}
+
+
+.client-info-card-text-blue{
+    font-size: 25px;
+    font-family: 'AlekSans', fallback-font, sans-serif;
+    font-weight: bold;
+    color: #096FEC;
+    margin-left: auto;
+}
+
+
+.client-info-card-text-gen{
+    font-size: 25px;
+    font-family: 'AlekSlab', fallback-font, sans-serif;
+    padding-bottom: 1vh;
+    
+}
+.client-info-card-text-bold{
+    font-size: 25px;
+    font-family: 'AlekSans', fallback-font, sans-serif;
+    font-weight: bold;
+    padding-bottom: 1vh;
+}
+
+.two-column-container{
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+.client-info-card-text-blue-left{
+    font-size: 25px;
+    font-family: 'AlekSans', fallback-font, sans-serif;
+    font-weight: bold;
+    color: #096FEC;
+    margin-right: auto;
+}
+
+.btn-customer-pin{
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #B6A5BC;
+    background: white;
+    margin-left: 5vh;
+    margin-top: 3vh;
+    font-size: 25px;
+    font-family: 'AlekSans', fallback-font, sans-serif;
+    font-weight: bold;
+    width: 90vh;
+    height: 10vh;
+
+
+}
+
+
+.client-button-container{
+    justify-content: center;
+    align-items: center;
+    display:grid;
+    grid-template-rows: auto ;
+    padding-bottom: 10vh;
+
+}
+
+.loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #096FEC;/* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    visibility:hidden;
+    margin: auto;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/* ========================== END JOBS / CLIENTS PAGE ========================= */
+

@@ -1,0 +1,7 @@
+A 10% chance ProviderIssue is the problem
+A 51% chance SignalIssue is the problem
+A 100% chance LegacyIssue is the problem
+A 14% chance LatencyIssue is the problem
+A 27% chance SpywareIssue is the problem
+A 13% chance ConnectionTypeIssue is the problem
+A 8% chance BandwidthIssue is the problem

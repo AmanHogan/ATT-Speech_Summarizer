@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Client </title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/client.js" ></script>
+</head>
+
+<body style="margin: 0px; background: white;">
+
+    <!-- Navigation Header -->
+    <div class="nav-bar"> 
+        <img src="/img/icon-left.png" alt="Left arrow" class="icon-left"></img>
+        <div class="job-id-title"> BAN 123456789 </div>
+        <img src="/img/att-logo.png" alt="att logo" height="73" width="94" class="att-logo-nav"></img>
+        <img src="/img/icon-notes.png" alt="Right arrow"  class="icon-right"></img>
+    </div>
+
+    <!-- Navigation Banner -->
+    <div class="nav-banner">
+        <div class="banner-appt-time">APPT: 10:00 - 12:00 pm </div>
+        <div class="banner-appt-container">
+            <div class="banner-appt-type">Install</div>
+            <img src="/img/icon-dispatch.png" class="icon-dispatch" alt="icon-dispatch"></img>
+        </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="nav-divider"></div>
+    <div class="nav-tabs">
+        <div class="nav-tab-item-container"><div class="nav-tab-item" id="jobPage" onclick="goToJobPage()">Job</div></div>
+        <div class="nav-tab-item-container"><div class="nav-tab-item">Client</div></div>
+        <div class="nav-tab-item-container"><div class="nav-tab-item">History</div></div>
+        <div class="nav-tab-item-container"><div class="nav-tab-item">Facilities</div></div>
+        <div class="nav-tab-item-container"><div class="nav-tab-item">Tests</div></div>
+    </div>
+
+    <!-- Client Information -->
+    <div class="client-info-container" style="background: white;">
+        <div class="client-text-info"> Client Information</div>
+    </div>
+
+    <div class="client-info-card">
+        <div class="client-info-card-text-gen"> Business</div>
+        <div class="two-column-container">
+            <div class="client-info-card-text-bold"> McDonald's</div>
+            <div class="client-info-card-text-blue"> (305) 555-5555 > </div>
+        </div>
+        <div class="nav-divider"></div>
+    </div>
+
+    <div class="client-info-card">
+        <div class="client-info-card-text-gen"> Primary Site Contact</div>
+        <div class="two-column-container">
+            <div class="client-info-card-text-bold"> Sallie Todd</div>
+            <div class="client-info-card-text-blue"> (305) 666-6666 > </div>
+        </div>
+        <div class="nav-divider"></div>
+    </div>
+
+    <div class="client-info-card">
+        <div class="client-info-card-text-gen"> Business ID</div>
+        <div class="two-column-container">
+            <div class="client-info-card-text-bold"> NO OMID Registered</div>
+        </div>
+        <div class="nav-divider"></div>
+    </div>
+
+    <div class="client-info-card">
+        <div class="client-info-card-text-gen"> Business Email</div>
+        <div class="client-info-card-text-blue-left"> sallie.todd@mcdonalds.com > </div>
+        <div class="nav-divider"></div>
+    </div>
+
+    <div class="client-info-card">
+        <div class="client-info-card-text-gen"> BAN</div>
+        <div class="client-info-card-text-bold"> 123456789</div>
+        <div class="nav-divider"></div>
+    </div>
+
+    <div class="client-button-container" style="padding-bottom: 0px;">
+        <button type='button' id="client-pin-button" class="btn-customer-pin" onclick="showCustomerPin()">SHOW CUSTOMER PIN</button>
+        <div id="loading-icon" class="loader"> &nbsp </div>
+    </div>
+    
+    
+    <!-- Location -->
+    <div class="client-info-container" style="background: white;">
+        <div class="client-text-info"> Location</div>
+    </div>
+
+    <div class="client-info-card">
+        <div class="client-info-card-text-gen"> ADDRESS</div>
+        <div class="two-column-container">
+            <div class="client-info-card-text-bold"> 752 Peachtree St NE UNIT D411 Atlanta, GA, 30308</div>
+            <div class="client-info-card-text-blue"> MAP </div>
+        </div>
+        <div class="nav-divider"></div>
+        <div style="padding-top: 40px; margin: auto;"> <img src="/img/google-maps.png" alt="maps icon" style="border-radius: 20px;  border: 3px solid #096FEC"></img></div>
+    </div>
+
+     <!-- Documents -->
+     <div class="client-info-container" style="background: white;">
+        <div class="client-text-info"> Documents</div>
+    </div>
+
+    <div class="client-button-container" style="padding-bottom: 0px;">
+        <button type='button' id="client-pin-button" class="btn-customer-pin" >SEND INTERNET OPTIMIZATION</button>
+        <div id="loading-icon" class="loader"> &nbsp </div>
+    </div>
+
+    <div class="client-button-container" style="margin-bottom: 0px;">
+        <button type='button' id="client-pin-button" class="btn-customer-pin" > SEND SERVICE PROMISE</button>
+        <div id="loading-icon" class="loader"> &nbsp </div>
+    </div>
+
+    <!-- Business Overview -->
+    <div class="client-info-container" style="background: white;">
+        <div class="client-text-info"> Business Overview</div>
+    </div>
+
+    <div class="client-info-card">
+        <div class="client-info-card-text-gen"> Number of Devices:</div>
+        <div class="two-column-container">
+            <div class="client-info-card-text-bold"> 14 </div>
+        </div>
+        <div class="nav-divider"></div>
+    </div>
+
+    <div class="client-info-card">
+        <div class="client-info-card-text-gen"> Core Business Hours </div>
+        <div class="two-column-container">
+            <div class="client-info-card-text-bold">6:00 am - 11:00 pm</div>
+        </div>
+        <div class="nav-divider"></div>
+    </div>
+
+    <div class="client-info-card">
+        <div class="client-info-card-text-gen"> Customer Traffic</div>
+        <div class="two-column-container">
+            <div class="client-info-card-text-bold"> HIGH</div>
+        </div>
+        <div class="nav-divider"></div>
+    </div>
+
+    <div class="client-info-card">
+        <div class="client-info-card-text-gen"> Hourly Broadband Speeds</div>
+        <div class="client-info-card-text-bold"> <img src="/img/download-speeds.png" alt="download icon" height="290px" width="444px" ></img></div>
+        <div class="nav-divider"></div>
+    </div>
+
+    <div class="client-info-card">
+        <div class="client-info-card-text-gen"> Usage</div>
+        <div class="client-info-card-text-bold"> Tables, Kiosks, Cameras</div>
+        <div class="nav-divider"></div>
+    </div>
+
+    <div class="client-info-card">
+        <div class="client-info-card-text-gen"> Business Purpose</div>
+        <div class="two-column-container">
+            <div class="client-info-card-text-bold"> Food and Customer Service</div>
+        </div>
+        <div class="nav-divider"></div>
+    </div>
+</body>
+
+</html>

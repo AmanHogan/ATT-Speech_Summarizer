@@ -1,0 +1,7 @@
+uploads/
+/backend/db/logs/logFile.txt
+/backend/db/predictions
+/backend/db/training/client-data.csv
+*.pyc
+*.cpython
+*__pycache__
